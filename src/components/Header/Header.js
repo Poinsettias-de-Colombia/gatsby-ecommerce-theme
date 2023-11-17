@@ -27,7 +27,7 @@ const Header = (prop) => {
   const [search, setSearch] = useState('');
 
   const searchRef = createRef();
-  const bannerMessage = 'Free shipping worldwide';
+  const bannerMessage = 'Desde 1993';
   const searchSuggestions = [
     'Oversize sweaters',
     'Lama Pajamas',
@@ -118,47 +118,49 @@ const Header = (prop) => {
             <Icon symbol={`${mobileMenu === true ? 'cross' : 'burger'}`}></Icon>
           </div>
           <Brand />
-          <div className={styles.actionContainers}>
-            <button
-              aria-label="Search"
-              className={`${styles.iconButton} ${styles.iconContainer}`}
-              onClick={() => {
-                setShowSearch(!showSearch);
-              }}
-            >
-              <Icon symbol={'search'}></Icon>
-            </button>
-            <Link
-              aria-label="Favorites"
-              href="/account/favorites"
-              className={`${styles.iconContainer} ${styles.hideOnMobile}`}
-            >
-              <Icon symbol={'heart'}></Icon>
-            </Link>
-            <Link
-              aria-label="Orders"
-              href={isAuth() ? '/login' : '/account/orders/'}
-              className={`${styles.iconContainer} ${styles.hideOnMobile}`}
-            >
-              <Icon symbol={'user'}></Icon>
-            </Link>
-            <button
-              aria-label="Cart"
-              className={`${styles.iconButton} ${styles.iconContainer} ${styles.bagIconContainer}`}
-              onClick={() => {
-                setShowMiniCart(true);
-                setMobileMenu(false);
-              }}
-            >
-              <Icon symbol={'bag'}></Icon>
-              <div className={styles.bagNotification}>
-                <span>1</span>
-              </div>
-            </button>
-            <div className={styles.notificationContainer}>
-              <AddNotification openCart={() => setShowMiniCart(true)} />
-            </div>
-          </div>
+
+          {/*right side actions: search, favorite, login and cart*/}
+          {/*<div className={styles.actionContainers}>*/}
+          {/*  <button*/}
+          {/*    aria-label="Search"*/}
+          {/*    className={`${styles.iconButton} ${styles.iconContainer}`}*/}
+          {/*    onClick={() => {*/}
+          {/*      setShowSearch(!showSearch);*/}
+          {/*    }}*/}
+          {/*  >*/}
+          {/*    <Icon symbol={'search'}></Icon>*/}
+          {/*  </button>*/}
+          {/*  <Link*/}
+          {/*    aria-label="Favorites"*/}
+          {/*    href="/account/favorites"*/}
+          {/*    className={`${styles.iconContainer} ${styles.hideOnMobile}`}*/}
+          {/*  >*/}
+          {/*    <Icon symbol={'heart'}></Icon>*/}
+          {/*  </Link>*/}
+          {/*  <Link*/}
+          {/*    aria-label="Orders"*/}
+          {/*    href={isAuth() ? '/login' : '/account/orders/'}*/}
+          {/*    className={`${styles.iconContainer} ${styles.hideOnMobile}`}*/}
+          {/*  >*/}
+          {/*    <Icon symbol={'user'}></Icon>*/}
+          {/*  </Link>*/}
+          {/*  <button*/}
+          {/*    aria-label="Cart"*/}
+          {/*    className={`${styles.iconButton} ${styles.iconContainer} ${styles.bagIconContainer}`}*/}
+          {/*    onClick={() => {*/}
+          {/*    setShowMiniCart(true);*/}
+          {/*    setMobileMenu(false);*/}
+          {/*    }}*/}
+          {/*  >*/}
+          {/*    <Icon symbol={'bag'}></Icon>*/}
+          {/*    <div className={styles.bagNotification}>*/}
+          {/*      <span>1</span>*/}
+          {/*    </div>*/}
+          {/*  </button>*/}
+          {/*  <div className={styles.notificationContainer}>*/}
+          {/*    <AddNotification openCart={() => setShowMiniCart(true)} />*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </div>
 
         {/* search container */}
@@ -219,7 +221,7 @@ const Header = (prop) => {
         </Container>
       </div>
 
-      {/* minicart container */}
+       {/*minicart container*/}
       <Drawer visible={showMiniCart} close={() => setShowMiniCart(false)}>
         <MiniCart />
       </Drawer>

@@ -20,96 +20,63 @@
             {"image": "/products/pdp3.jpeg", "alt": "pdp description 3"},
             {"image": "/products/pdp4.jpeg", "alt": "pdp description 4"}
         ],
-        "description": "This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife. Once knitted, the garment is washed in Scottish spring water to make it beautifully soft."
+        "description": "This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife. Once knitted, the garment is washed in Scottish spring water to make it beautifully soft.",
+        "care": "none"
     },
     {
-        "name": "Classic T-Shirt",
-        "price": 75,
-        "alt": "classic t-shirt 1",
-        "image": "/products/shirt1.jpg",
-        "tags": ["shirt", "men"]
+        "productCode": "P10",
+        "name": "Poinsettia Pequeña",
+        "vendor": "Poinsettias de Colombia",
+        "price": 15000,
+        "alt": "poinsettia pequeña roja referencia p10",
+        "image": "/products/endless_p10.jpg",
+        "tags": ["poinsettia", "roja", "P10"],
+        "gallery": [
+            {"image": "/products/endless_p10.jpg", "alt": "poinsettia pequeña roja referencia p10"}
+        ],
+        "description": "Nuestra planta más pequeña, perfecta para arreglos de centro de mesa, mesitas de café, pesebres, ¡e incluso para decorar tu árbol de navidad!",
+        "care": "Riega la tierra con un pocillo tintero de agua cada dos o tres días o cuando se sienta seca al tacto, evita mojar las hojas. Ubícala en interiores, con buena luz pero sin sol directo"
     },
     {
-        "name": "Classic T-Shirt",
-        "price": 75,
-        "alt": "classic t-shirt 2",
-        "image": "/products/shirt2.jpg",
-        "tags": ["shirt", "men"]
+        "productCode": "P14",
+        "name": "Poinsettia Mediana",
+        "vendor": "Poinsettias de Colombia",
+        "price": 20000,
+        "alt": "poinsettia mediana roja referencia p14",
+        "image": "/products/endless_p14.jpg",
+        "tags": ["poinsettia", "roja", "P14"],
+        "gallery": [
+            {"image": "/products/endless_p14.jpg", "alt": "poinsettia mediana roja referencia p14"}
+        ],
+        "description": "Nuestra planta más vendida, perfecta para decorar todos los espacios, como centros de mesa, escritorios, hasta ventanillas y vitrinas de negocios.",
+        "care": "Riega la tierra con un pocillo tintero de agua cada dos o tres días o cuando se sienta seca al tacto, evita mojar las hojas. Ubícala en interiores, con buena luz pero sin sol directo"
     },
     {
-        "name": "Classic T-Shirt",
-        "price": 75,
-        "alt": "classic t-shirt 3",
-        "image": "/products/shirt3.jpg",
-        "tags": ["shirt", "men"]
+        "productCode": "P17",
+        "name": "Poinsettia Grande",
+        "vendor": "Poinsettias de Colombia",
+        "price": 35000,
+        "alt": "poinsettia grande roja referencia p17",
+        "image": "/products/endless_p17.jpg",
+        "tags": ["poinsettia", "roja", "P17"],
+        "gallery": [
+            {"image": "/products/endless_p17.jpg", "alt": "poinsettia mediana roja referencia p17"}
+        ],
+        "description": "Una opción para espacios más grandes. Perfecta para decorar puertas, vestibulos, y esquinas olvidadas de nuestras salas y comedores. ",
+        "care": "Riega la tierra con un mug de agua día de por medio, evita mojar las hojas. Ubícala en interiores, con buena luz pero sin sol directo"
     },
     {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 13.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman1.jpeg",
-        "tags": ["woman"],
-        "meta": "+ 2 colors"
-    },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 15.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman2.jpeg",
-        "tags": ["woman"]
-    },    
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 13.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman3.jpeg",
-        "tags": ["woman"],
-        "meta": "+ 2 colors"
-    },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 15.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman4.jpeg",
-        "tags": ["woman"]
-    },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 15.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman5.jpeg",
-        "tags": ["woman"],
-        "originalPrice": 31.50
-
-    },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 21,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman6.jpeg",
-        "tags": ["woman"]
-    },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 15.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman3.jpeg",
-        "tags": ["woman"]
-    },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 15.90,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman2.jpeg",
-        "tags": ["woman"],
-        "originalPrice": 31.50
-
-    },
-    {
-        "name": "Relaxed-fit graphic T-shirt",
-        "price": 21,
-        "alt": "relaxed t shirt woman",
-        "image": "/products/woman1.jpeg",
-        "tags": ["woman"]
+        "productCode": "P28",
+        "name": "Poinsettia Extra Grande",
+        "vendor": "Poinsettias de Colombia",
+        "price": 100000,
+        "alt": "poinsettia extra grande roja p28",
+        "image": "/products/endless_p28.jpg",
+        "tags": ["poinsettia", "roja", "P28"],
+        "gallery": [
+            {"image": "/products/endless_p28.jpg", "alt": "poinsettia extra grande roja p28"}
+        ],
+        "description": "Nuestra planta más grande y magestuosa. Una oda a la naturaleza perfecta para decor grandes espacios como recepciones y lobbies de edificios.",
+        "care": "Riega la tierra con 1.5 litros de agua cada dos días, evita mojar las hojas. Ubícala en interiores, con buena luz pero sin sol directo"
     }
   ]
