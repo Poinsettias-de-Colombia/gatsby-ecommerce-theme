@@ -10,7 +10,8 @@ const Brand = (props) => {
       role={'presentation'}
       onClick={() => navigate('/')}
     >
-       <h4>Poinsettias de Colombia logo svg</h4>
+       {/*<h4>Poinsettias de Colombia</h4>*/}
+       <img src={'/brand.svg'} alt={'brand'} />
       {/*<svg*/}
       {/*  width={127}*/}
       {/*  height={24}*/}

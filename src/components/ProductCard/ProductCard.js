@@ -8,6 +8,7 @@ import CurrencyFormatter from '../CurrencyFormatter';
 const ProductCard = (props) => {
   const [isWishlist, setIsWishlist] = useState(false);
   const {
+    productCode,
     image,
     imageAlt,
     name,
@@ -18,8 +19,8 @@ const ProductCard = (props) => {
     height = 580,
   } = props;
 
-  const handleRouteToProduct = () => {
-    navigate('/product/sample');
+  const handleRouteToProduct = ({productCode}) => {
+    navigate(`/product/${productCode}`);
   };
 
   const handleQuickView = (e) => {
@@ -36,31 +37,31 @@ const ProductCard = (props) => {
     <div className={styles.root}>
       <div
         className={styles.imageContainer}
-        onClick={() => handleRouteToProduct()}
+        onClick={() => handleRouteToProduct({productCode})}
         role={'presentation'}
       >
         <img style={{ height: `${height}px` }} src={image} alt={imageAlt}></img>
-        <div
-          className={styles.bagContainer}
-          role={'presentation'}
-          onClick={(e) => handleQuickView(e)}
-        >
-          <Icon symbol={'bagPlus'} />
-        </div>
-        <div
-          className={styles.heartContainer}
-          role={'presentation'}
-          onClick={(e) => handleFavorite(e)}
-        >
-          <Icon symbol={'heart'} />
-          <div
-            className={`${styles.heartFillContainer} ${
-              isWishlist === true ? styles.show : styles.hide
-            }`}
-          >
-            <Icon symbol={'heartFill'}></Icon>
-          </div>
-        </div>
+        {/*<div*/}
+        {/*  className={styles.bagContainer}*/}
+        {/*  role={'presentation'}*/}
+        {/*  onClick={(e) => handleQuickView(e)}*/}
+        {/*>*/}
+        {/*  <Icon symbol={'bagPlus'} />*/}
+        {/*</div>*/}
+        {/*<div*/}
+        {/*  className={styles.heartContainer}*/}
+        {/*  role={'presentation'}*/}
+        {/*  onClick={(e) => handleFavorite(e)}*/}
+        {/*>*/}
+        {/*  <Icon symbol={'heart'} />*/}
+        {/*  <div*/}
+        {/*    className={`${styles.heartFillContainer} ${*/}
+        {/*      isWishlist === true ? styles.show : styles.hide*/}
+        {/*    }`}*/}
+        {/*  >*/}
+        {/*    <Icon symbol={'heartFill'}></Icon>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
       </div>
       <div className={styles.detailsContainer}>
         <span className={styles.productName}>{name}</span>

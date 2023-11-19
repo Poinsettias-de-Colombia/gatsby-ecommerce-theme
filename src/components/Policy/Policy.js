@@ -1,7 +1,7 @@
 import React from 'react';
 import * as styles from './Policy.module.css';
 
-const Policy = (props) => {
+const ExamplePolicy = (props) => {
   return (
     <div className={styles.root}>
       <div className={styles.section}>
@@ -11,18 +11,6 @@ const Policy = (props) => {
           information that you voluntarily provide when applying or registering
           for an account with The Upside or making a purchase on The Upside
           website; www.theupside.com (the Website).
-        </p>
-        <p>
-          This Privacy Policy (Privacy Policy) outlines how your information is
-          collected, used and disclosed when you access or use our Services as
-          defined in our Terms. This information is collected, used and
-          disclosed in accordance with the Privacy Act 1988 (Cth) (Privacy Act).{' '}
-        </p>
-        <p>
-          This Privacy Policy is incorporated by reference into our Terms. Any
-          capitalized terms not defined in this Policy are defined in the Terms.
-          You agree to comply with all Terms when accessing or using our
-          Services, including this Privacy Policy.
         </p>
       </div>
 
@@ -40,68 +28,65 @@ const Policy = (props) => {
           collect personally identifiable information from visitors under the
           age of 13.
         </p>
-        <p>
-          If you are under 18, any use of our Services must be with the
-          involvement of a parent or guardian. By accessing or using our
-          Website, you warrant and represent to us that you are over the age of
-          18 years and you have the right, authority and legal capacity to enter
-          into a legally binding agreement and to abide by this Privacy Policy.{' '}
-        </p>
-        <p>
-          The Upside collects, uses and discloses information regarding users
-          aged 13-18 in the same manner as it does for adults.{' '}
-        </p>
       </div>
-
       <div className={styles.section}>
         <h3>3. Lorem Ipsum</h3>
         <p>
           You must only use our Services in accordance with this Privacy Policy
           and any applicable law or regulations. You agree to refrain from
           undertaking any prohibited acts as set out in this Clause 3. You must
-          not (or attempt to):{' '}
+          not (or attempt to):
         </p>
         <p>
           (a) interfere with or disrupt the use of Services or the website, in
           any manner including but not limited to the servicers or networks that
           host the website;{' '}
         </p>
-        <p>(b) stalk, harass, threaten, intimidate or harm another; </p>
+      </div>
+    </div>
+  );
+};
+
+const ShippingPolicy = (props) => {
+  return (
+    <div className={styles.root}>
+      <div className={styles.section}>
+        <h3>Zonas de distribución</h3>
         <p>
-          (c) pretend to be anyone, or any entity, you are not, you will not
-          impersonate or misrepresent yourself as another person (including
-          celebrities), entity, a The Upside employee, or a civic or government
-          leader, or otherwise misrepresent your affiliation with a person or
-          entity. The Upside reserves the right to reject or block any user
-          which could be deemed to be an impersonation or misrepresentation of
-          your identity, or a misappropriation of another person's name or
-          identity;{' '}
+          Realizamos domicilios sin costo adicional a mayoristas en la zona norte
+          de Bogotá, Chia, Cota, Funza y Mosquera.
         </p>
+      </div>
+
+      <div className={styles.section}>
+        <h3>Cantidades</h3>
         <p>
-          (d) engage in any copyright infringement or other intellectual
-          property infringement, or disclose any trade secret or confidential
-          information in violation of a confidentiality, employment, or
-          non-disclosure agreement or otherwise;{' '}
+          Por motivos de disponibilidad de vehiculos, solo podemos realizar
+          domicilios a mayoristas, por pedidos de 10 o más cajas. El número de
+          plantas por caja depende de su tamaño:
         </p>
+        <ul style={{listStyleType: 'disc'}}>
+          <li>Pequeñas (P10) y medianas (P14): 12 unidades por caja</li>
+          <li>Grandes (P17): 6 unidades por caja</li>
+          <li>Extra Grandes (P28): 2 unidades por caja</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+const PaymentPolicy = (props) => {
+  return (
+    <div className={styles.root}>
+      <div className={styles.section}>
         <p>
-          (e) use, distribute, reproduce or commercialize any content from the
-          Website or The Upside service except as permitted by this Policy, by
-          law, and with prior written agreement from The Upside;{' '}
-        </p>
-        <p>
-          (f) transmit any unsolicited advertising, promotional material or
-          other forms of solicitation in connection with your use of the Service
-          without the prior written agreement of The Upside;{' '}
-        </p>
-        <p>
-          (g) forge any TCP-IP packet header or any part of the header
-          information or otherwise putting Information in a header designed to
-          mislead recipients as to the origin of any content transmitted through
-          the Website ("spoofing";);
+          Preferimos pagos en efectivo, pero también recibimos consignaciones
+          a nuestras cuentas de Bancolombia y Nequi.
         </p>
       </div>
     </div>
   );
 };
 
-export default Policy;
+
+export {ShippingPolicy, PaymentPolicy};

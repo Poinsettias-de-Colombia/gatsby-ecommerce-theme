@@ -6,20 +6,17 @@ import Banner from '../components/Banner';
 import Contact from '../components/Contact';
 import Layout from '../components/Layout/Layout';
 import ThemeLink from '../components/ThemeLink';
-import Policy from '../components/Policy';
+import { ExamplePolicy, ShippingPolicy, PaymentPolicy} from '../components/Policy';
 import Container from '../components/Container';
 
 const SupportPage = (props) => {
   const subpages = [
-    { title: 'Shipping', key: 'shipping' },
-    { title: 'Returns', key: 'returns' },
-    { title: 'Payments & Security', key: 'payments' },
-    { title: 'Terms & Conditions', key: 'terms' },
-    { title: 'Contact Us', key: 'contact' },
-    { title: 'Privacy Policy', key: 'policy' },
+    { title: 'Domicilios', key: 'shipping' },
+    { title: 'Formas de pago', key: 'payments' },
+    { title: 'Contactanos', key: 'contact' }
   ];
 
-  const [current, setCurrent] = useState(subpages[4]);
+  const [current, setCurrent] = useState(subpages[0]);
 
   const renderElement = (key) => {
     let tempElement = <React.Fragment />;
@@ -28,20 +25,11 @@ const SupportPage = (props) => {
       case 'contact':
         tempElement = <Contact />;
         break;
-      case 'policy':
-        tempElement = <Policy />;
-        break;
       case 'shipping':
-        tempElement = <Policy />;
-        break;
-      case 'returns':
-        tempElement = <Policy />;
+        tempElement = <ShippingPolicy />;
         break;
       case 'payments':
-        tempElement = <Policy />;
-        break;
-      case 'terms':
-        tempElement = <Policy />;
+        tempElement = <PaymentPolicy />;
         break;
       default:
         break;
@@ -74,7 +62,8 @@ const SupportPage = (props) => {
           name={current.title}
           bgImage={'/support.png'}
           color={'var(--standard-white)'}
-          height={'350px'}
+          // height={'350px'}
+          height={'640px'}
         />
 
         <div className={styles.navContainer}>

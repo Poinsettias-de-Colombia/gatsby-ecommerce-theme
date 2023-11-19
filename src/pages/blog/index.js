@@ -19,51 +19,51 @@ const BlogPage = (props) => {
         <Hero
           maxWidth={'400px'}
           image={'/blogCover.png'}
-          title={`The new standard of Closing`}
-          ctaLink={'read story'}
-          ctaTo={'/blog/sample'}
-          header={'design'}
+          title={`Cuidados de la Poinsettia`}
+          ctaLink={'aprende como prolongar su vida'}
+          ctaTo={'/blog/care'}
+          header={'información'}
         />
+        {/*Navigation by category buttons*/}
+        {/*<div className={styles.navContainer}>*/}
+        {/*  <ThemeLink*/}
+        {/*    onClick={() => navigate('/blog/care')}*/}
+        {/*    to={'/blog/care'}*/}
+        {/*  >*/}
+        {/*    All Posts*/}
+        {/*  </ThemeLink>*/}
+        {/*  <ThemeLink*/}
+        {/*    onClick={() => navigate('/blog/sample')}*/}
+        {/*    to={'/blog/sample'}*/}
+        {/*  >*/}
+        {/*    Design*/}
+        {/*  </ThemeLink>*/}
+        {/*  <ThemeLink*/}
+        {/*    onClick={() => navigate('/blog/sample')}*/}
+        {/*    to={'/blog/sample'}*/}
+        {/*  >*/}
+        {/*    Collaboration*/}
+        {/*  </ThemeLink>*/}
+        {/*  <ThemeLink*/}
+        {/*    onClick={() => navigate('/blog/sample')}*/}
+        {/*    to={'/blog/sample'}*/}
+        {/*  >*/}
+        {/*    Interview*/}
+        {/*  </ThemeLink>*/}
+        {/*  <ThemeLink*/}
+        {/*    onClick={() => navigate('/blog/sample')}*/}
+        {/*    to={'/blog/sample'}*/}
+        {/*  >*/}
+        {/*    News*/}
+        {/*  </ThemeLink>*/}
+        {/*</div>*/}
 
-        <div className={styles.navContainer}>
-          <ThemeLink
-            onClick={() => navigate('/blog/sample')}
-            to={'/blog/sample'}
-          >
-            All Posts
-          </ThemeLink>
-          <ThemeLink
-            onClick={() => navigate('/blog/sample')}
-            to={'/blog/sample'}
-          >
-            Design
-          </ThemeLink>
-          <ThemeLink
-            onClick={() => navigate('/blog/sample')}
-            to={'/blog/sample'}
-          >
-            Collaboration
-          </ThemeLink>
-          <ThemeLink
-            onClick={() => navigate('/blog/sample')}
-            to={'/blog/sample'}
-          >
-            Interview
-          </ThemeLink>
-          <ThemeLink
-            onClick={() => navigate('/blog/sample')}
-            to={'/blog/sample'}
-          >
-            News
-          </ThemeLink>
-        </div>
-
-        {/* Blog Grid */}
-        <div className={styles.blogsContainer}>
-          <Container size={'large'}>
-            <BlogPreviewGrid data={blogData} hideReadMoreOnWeb showExcerpt />
-          </Container>
-        </div>
+        {/*/!* Blog Grid *!/*/}
+        {/*<div className={styles.blogsContainer}>*/}
+        {/*  <Container size={'large'}>*/}
+        {/*    <BlogPreviewGrid data={blogData} hideReadMoreOnWeb showExcerpt />*/}
+        {/*  </Container>*/}
+        {/*</div>*/}
       </div>
     </Layout>
   );

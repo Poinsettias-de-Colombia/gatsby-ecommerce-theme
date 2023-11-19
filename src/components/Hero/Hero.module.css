@@ -29,6 +29,15 @@
     white-space: pre-wrap;
 }
 
+.titleContrast {
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 72px;
+    line-height: 86px;
+    font-weight: normal;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
 .subtitle {
     
     font-weight: 400;

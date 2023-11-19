@@ -16,7 +16,8 @@ import Config from '../config.json';
 
 const ShopPage = (props) => {
   const [showFilter, setShowFilter] = useState(false);
-  const data = generateMockProductData(6, 'woman');
+  // todo dinamically pull products based on the filters defined by the user
+  const data = generateMockProductData(6, 'poinsettia');
 
   useEffect(() => {
     window.addEventListener('keydown', escapeHandler);
@@ -34,60 +35,69 @@ const ShopPage = (props) => {
         <Container size={'large'} spacing={'min'}>
           <div className={styles.breadcrumbContainer}>
             <Breadcrumbs
+                // todo set dinamyc breadcrumbs
               crumbs={[
-                { link: '/', label: 'Home' },
-                { link: '/', label: 'Woman' },
-                { label: 'Sweaters' },
+                { link: '/', label: 'Inicio' },
+                { label: 'Poinsettias' },
               ]}
             />
           </div>
         </Container>
         <Banner
           maxWidth={'650px'}
-          name={`Woman's Sweaters`}
+          name={`Poinsettias`}
           subtitle={
-            'Look to our women’s sweaters for modern takes on one-and-done dressing. From midis in bold prints to dramatic floor-sweeping styles and easy all-in-ones, our edit covers every mood.'
+            'Nuestras plantas insignia y la piedra angular de nuestra empresa. ' +
+            'Una Alternativa natural para decorar la navidad'
           }
         />
         <Container size={'large'} spacing={'min'}>
-          <div className={styles.metaContainer}>
-            <span className={styles.itemCount}>476 items</span>
-            <div className={styles.controllerContainer}>
-              <div
-                className={styles.iconContainer}
-                role={'presentation'}
-                onClick={() => setShowFilter(!showFilter)}
-              >
-                <Icon symbol={'filter'} />
-                <span>Filters</span>
-              </div>
-              <div
-                className={`${styles.iconContainer} ${styles.sortContainer}`}
-              >
-                <span>Sort by</span>
-                <Icon symbol={'caret'} />
-              </div>
-            </div>
-          </div>
-          <CardController
-            closeFilter={() => setShowFilter(false)}
-            visible={showFilter}
-            filters={Config.filters}
-          />
-          <div className={styles.chipsContainer}>
-            <Chip name={'XS'} />
-            <Chip name={'S'} />
-          </div>
+          {/*/!*filters, count, and current filter buttons*!/*/}
+          {/*<div className={styles.metaContainer}>*/}
+          {/*  <span className={styles.itemCount}>476 items</span>*/}
+          {/*  <div className={styles.controllerContainer}>*/}
+
+          {/*    /!*Filter dropdown*!/*/}
+          {/*    <div*/}
+          {/*      className={styles.iconContainer}*/}
+          {/*      role={'presentation'}*/}
+          {/*      onClick={() => setShowFilter(!showFilter)}*/}
+          {/*    >*/}
+          {/*      <Icon symbol={'filter'} />*/}
+          {/*      <span>Filters</span>*/}
+          {/*    </div>*/}
+
+          {/*    /!*sort dropdown*!/*/}
+          {/*    <div*/}
+          {/*      className={`${styles.iconContainer} ${styles.sortContainer}`}*/}
+          {/*    >*/}
+          {/*      <span>Sort by</span>*/}
+          {/*      <Icon symbol={'caret'} />*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
+          {/*<CardController*/}
+          {/*  closeFilter={() => setShowFilter(false)}*/}
+          {/*  visible={showFilter}*/}
+          {/*  filters={Config.filters}*/}
+          {/*/>*/}
+          {/*<div className={styles.chipsContainer}>*/}
+          {/*  /!*todo dynamic filtering of product by size*!/*/}
+          {/*  <Chip name={'XS'} />*/}
+          {/*  <Chip name={'S'} />*/}
+          {/*</div>*/}
           <div className={styles.productContainer}>
-            <span className={styles.mobileItemCount}>476 items</span>
+            {/*<span className={styles.mobileItemCount}>476 items</span>*/}
             <ProductCardGrid data={data}></ProductCardGrid>
           </div>
-          <div className={styles.loadMoreContainer}>
-            <span>6 of 456</span>
-            <Button fullWidth level={'secondary'}>
-              LOAD MORE
-            </Button>
-          </div>
+
+          {/*load more button*/}
+          {/*<div className={styles.loadMoreContainer}>*/}
+          {/*  <span>6 of 456</span>*/}
+          {/*  <Button fullWidth level={'secondary'}>*/}
+          {/*    LOAD MORE*/}
+          {/*  </Button>*/}
+          {/*</div>*/}
         </Container>
       </div>
 

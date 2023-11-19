@@ -29,9 +29,9 @@ const Header = (prop) => {
   const searchRef = createRef();
   const bannerMessage = 'Desde 1993';
   const searchSuggestions = [
-    'Oversize sweaters',
-    'Lama Pajamas',
-    'Candles Cinnamon',
+    'Poinsettias',
+    'Gerberas',
+    'Girasoles',
   ];
 
   const handleHover = (navObject) => {

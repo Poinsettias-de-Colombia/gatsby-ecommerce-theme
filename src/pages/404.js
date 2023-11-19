@@ -19,25 +19,24 @@ const NotFoundPage = () => {
     <Layout disablePaddingBottom>
       <Container size={'medium'}>
         <div className={styles.root}>
-          <h1>404 Error</h1>
-          <h2>Page not found</h2>
+          <h1>Error 404</h1>
+          <h2>Pagina no encontrada</h2>
           <p>
-            Uh oh, looks like the page you are looking for has moved or no
-            longer exists.
+            Oh oh! al parecer nuestras plantas no están aquí.
           </p>
-          <form onSubmit={(e) => handleSubmit(e)}>
-            <div className={styles.searchContainer}>
-              <FormInputField
-                id={'name'}
-                value={search}
-                handleChange={(_, e) => setSearch(e)}
-                type={'text'}
-              />
-              <Button type={'submit'} level={'primary'}>
-                search
-              </Button>
-            </div>
-          </form>
+          {/*<form onSubmit={(e) => handleSubmit(e)}>*/}
+          {/*  <div className={styles.searchContainer}>*/}
+          {/*    <FormInputField*/}
+          {/*      id={'name'}*/}
+          {/*      value={search}*/}
+          {/*      handleChange={(_, e) => setSearch(e)}*/}
+          {/*      type={'text'}*/}
+          {/*    />*/}
+          {/*    <Button type={'submit'} level={'primary'}>*/}
+          {/*      search*/}
+          {/*    </Button>*/}
+          {/*  </div>*/}
+          {/*</form>*/}
         </div>
       </Container>
     </Layout>

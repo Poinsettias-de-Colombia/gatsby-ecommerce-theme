@@ -24,7 +24,7 @@
         },
         {
           "text": "Cuidados de las Plantas",
-          "link": "/blog"
+          "link": "/blog/care"
         }
       ]
     },
@@ -32,12 +32,12 @@
       "subTitle": "Soporte",
       "links": [
         {
-          "text": "Preguntas frequentes",
-          "link": "/faq"
+          "text": "Contáctenos",
+          "link": "/support#contact"
         },
         {
-          "text": "Contactenos",
-          "link": "/support#contact"
+          "text": "Preguntas Frecuentes",
+          "link": "/inConstruction"
         }
       ]
     }
@@ -67,39 +67,17 @@
               "menuLink": "/product/P28"
             }
           ]
-        },
-        {
-          "categoryLabel": "Flores de Corte",
-          "submenu": [
-            {
-              "menuLabel": "Gerberas",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "Girasoles",
-              "menuLink": "/shop"
-            }
-          ]
-        },
-        {
-          "categoryLabel": "Alimentos",
-          "submenu": [
-            {
-              "menuLabel": "Orellanas",
-              "menuLink": "/shop"
-            }
-          ]
         }
       ]
     },
     {
-      "menuLabel": "Sobre Nosotros",
-      "menuLink": "/about",
+      "menuLabel": "Cuidados",
+      "menuLink": "/blog/care",
       "category": null
     },
     {
-      "menuLabel": "Historias",
-      "menuLink": "/blog",
+      "menuLabel": "Sobre Nosotros",
+      "menuLink": "/about",
       "category": null
     }
   ],
@@ -107,10 +85,10 @@
     {
       "category": "tamaño",
       "items": [
-        { "name": "Mini", "value": true },
-        { "name": "Pequeño", "value": true },
-        { "name": "Mediano", "value": true },
-        { "name": "Grande", "value": true }
+        { "name": "S", "value": true },
+        { "name": "M", "value": true },
+        { "name": "L", "value": true },
+        { "name": "XL", "value": true }
       ]
     },
 

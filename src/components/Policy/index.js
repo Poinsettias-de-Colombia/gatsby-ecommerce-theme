@@ -1,1 +1,1 @@
-export { default } from './Policy';
+export { ShippingPolicy, PaymentPolicy } from './Policy';
