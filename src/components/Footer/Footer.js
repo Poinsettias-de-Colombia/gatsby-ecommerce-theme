@@ -69,23 +69,23 @@ const Footer = (prop) => {
             })}
             <div className={styles.newsLetter}>
               <div className={styles.newsLetterContent}>
-                <span className={styles.linkTitle}>Boletín de Noticias</span>
-                <p className={styles.promoMessage}>
-                  Se el primero en enterarte de la disponibilidad de nuestras
-                  plantas de temporada, e incluso de nuevos productos!
-                </p>
-                <form
-                  className={styles.newsLetterForm}
-                  onSubmit={(e) => subscribeHandler(e)}
-                >
-                  <FormInputField
-                    icon={'arrow'}
-                    id={'newsLetterInput'}
-                    value={email}
-                    placeholder={'Email'}
-                    handleChange={(_, e) => setEmail(e)}
-                  />
-                </form>
+                {/*<span className={styles.linkTitle}>Boletín de Noticias</span>*/}
+                {/*<p className={styles.promoMessage}>*/}
+                {/*  Se el primero en enterarte de la disponibilidad de nuestras*/}
+                {/*  plantas de temporada, e incluso de nuevos productos!*/}
+                {/*</p>*/}
+                {/*<form*/}
+                {/*  className={styles.newsLetterForm}*/}
+                {/*  onSubmit={(e) => subscribeHandler(e)}*/}
+                {/*>*/}
+                {/*  <FormInputField*/}
+                {/*    icon={'arrow'}*/}
+                {/*    id={'newsLetterInput'}*/}
+                {/*    value={email}*/}
+                {/*    placeholder={'Email'}*/}
+                {/*    handleChange={(_, e) => setEmail(e)}*/}
+                {/*  />*/}
+                {/*</form>*/}
                 <div className={styles.socialContainer}>
                   {Config.social.youtube && (
                     <div

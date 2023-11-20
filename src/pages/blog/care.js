@@ -26,7 +26,7 @@ const SamplePage = (props) => {
                 <h2 className={styles.blogSubHeader}>1. Ubicación</h2>
                 <p className={styles.blogParagraph}>
                   La poinsettia es una planta de interior, requiere buena luz,
-                  pero el sol directo puede quemar sus bracteas (hojas rojas).
+                  pero el sol directo puede quemar sus brácteas (hojas rojas).
                   Tampoco permitas que la moje la lluvia.
                 </p>
                 <br />
@@ -47,13 +47,13 @@ const SamplePage = (props) => {
                 </ul>
 
                 <p>
-                  El sustrato de nuestras plantas esta diseñado para retener
-                  la cantidad indicada de agua. En caso de dudas, está bien
-                  regar con un exceso de agua, que no con suficiente. El exceso
+                  El sustrato de nuestras plantas está diseñado para retener
+                  la cantidad indicada de agua. Es preferible regar con un
+                  exceso, que no con suficiente agua. El exceso
                   siempre va a salir por los agujeros de la matera.
                   Si decides poner un plato debajo de la matera para capturar
                   este exceso, asegúrate de vaciar el pláto unos minutos después
-                  del riego, pues esta agua acumulada puede propiciar la pudrición
+                  del riego, pues esta agua acumulada propicia la pudrición
                   de las raíces.
                 </p>
                 <br />

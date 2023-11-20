@@ -37,20 +37,27 @@ const Contact = (props) => {
       <div className={styles.section}>
         <h4>Escribenos</h4>
         <p>
-          Por Whatsapp, Intagram o Facebook. Estamos disponibles para responder
-          todas tus dudas.
+          Por <a href="https://wa.me/573132098050"><b>Whatsapp</b></a>
+          , <a href="https://www.instagram.com/poinsettiasdecolombia/"><b>Instagram</b></a>
+          , o <a href="https://www.facebook.com/poinsettiasdecolombia"><b>Facebook</b></a>.
+          Estamos disponibles para responder todas tus dudas.
         </p>
       </div>
 
       <div className={styles.section}>
         <h4>Celular</h4>
-        <p>+57 313 209 8050</p>
+        <p>
+            <a href="https://wa.me/573132098050"><b>+57 313 209 8050</b></a>
+        </p>
       </div>
 
       <div className={styles.section}>
         <h4>Email</h4>
         <p>
-          También puedes escribirnos a poinsettiasdecolombia@gmail.com
+          También puedes escribirnos
+          a <a href="poinsettiasdecolombia@gmail.com">
+            <b>poinsettiasdecolombia@gmail.com</b>
+            </a>
         </p>
       </div>
 
