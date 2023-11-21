@@ -28,6 +28,7 @@ import Search from './Search';
 import Twitter from './Twitter';
 import TwitterInverse from './TwitterInverse';
 import User from './User';
+import Whatsapp from "./Whatsapp";
 import Youtube from './Youtube';
 
 function Icon(props) {
@@ -86,6 +87,8 @@ function Icon(props) {
       return <TwitterInverse />;
     case 'user':
       return <User />;
+    case 'whatsapp':
+      return <Whatsapp />;
     case 'youtube':
       return <Youtube />;
     default:

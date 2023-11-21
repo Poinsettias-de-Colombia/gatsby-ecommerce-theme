@@ -6,6 +6,7 @@
     { "value": "spanish", "label": "Español" }
   ],
   "social": {
+    "whatsapp": "https://wa.me/573132098050",
     "facebook": "https://www.facebook.com/poinsettiasdecolombia",
     "instagram": "https://www.instagram.com/poinsettiasdecolombia/"
   },
@@ -78,6 +79,11 @@
     {
       "menuLabel": "Sobre Nosotros",
       "menuLink": "/about",
+      "category": null
+    },
+        {
+      "menuLabel": "WhatsApp",
+      "menuLink": "https://wa.me/573132098050",
       "category": null
     }
   ],
