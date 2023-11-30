@@ -22,20 +22,18 @@ const SamplePage = (props) => {
                   La belleza de la poinsettia esta en su vida, y para que esta
                   belleza se preserve, debemos velar por su bienestar.
                 </p>
-                <br />
                 <h2 className={styles.blogSubHeader}>1. Ubicación</h2>
                 <p className={styles.blogParagraph}>
                   La poinsettia es una planta de interior, requiere buena luz,
                   pero el sol directo puede quemar sus brácteas (hojas rojas).
                   Tampoco permitas que la moje la lluvia.
                 </p>
-                <br />
                 <h2 className={styles.blogSubHeader}>2. Riego</h2>
                 <p className={styles.blogParagraph}>
-                  Esta planta requirede un riego diligente. Una de las quejas
-                  mas comunes que recibimos es que la planta se ve decaida, y sus
-                  hojas parecen desgonzadas. Esta es una señal inequivoda de
-                  deshidratacion.
+                  Esta planta requiere de un riego diligente. Una de las quejas
+                  más comunes que recibimos es que la planta se ve decaída, y sus
+                  hojas parecen desgonzadas. Esta es una señal inequívoca de
+                  deshidratación.
 
                   La cantidad de agua cada planta depende de su tamaño.
                 </p>
@@ -56,17 +54,30 @@ const SamplePage = (props) => {
                   del riego, pues esta agua acumulada propicia la pudrición
                   de las raíces.
                 </p>
-                <br />
                 <h2 className={styles.blogSubHeader}>3. Fin de Temporada</h2>
                 <p className={styles.blogParagraph}>
                   La floración para la poinsettia es une estado energéticamente
                   costoso. Imagina que es un embarazo, si este fuera permanente
                   sería insostenible. Si quieres prolongar la vida de tu planta
                   más allá del las fiestas de fin de año, corta las puntas de
-                  las ramas que contienen flores hojas rojas. Una vez que la
-                  planta solo tenga hojas verdes, esta lista para entrar en
-                  estado vegetativo y continuar creciendo. Ubícala en un lugar
-                  con buena luz y fertilízala.
+                  las ramas que contienen flores hojas rojas y ubícala en un
+                  lugar que tenga luz artificial durante algunas horas de la noche.
+                  Una vez que la planta solo tenga hojas verdes, y esté
+                  expuesta a “días largos de verano”, entrara en estado
+                  vegetativo y continuara creciendo durante el resto del
+                  año. Puedes ayudar a tu planta en estado vegetativo con algo
+                  de fertilizante como triple-15.
+                </p>
+                <h2 className={styles.blogSubHeader}>4. Floración</h2>
+                <p className={styles.blogParagraph}>
+                  Si tu poinsettia está verde y saludable para las fiestas de
+                  próximo año, y quieres que vuelva a poner sus hojas rojas
+                  debes engañarla!.
+                  La poinsettia viene de latitudes altas, y florece cuando se
+                  aproxima el invierno y los días se hacen más cortos. En el
+                  trópico colombiano, debes simular esos días cortos invernales
+                  poniendo tu poinsettia en un lugar oscuro desde las 4 pm
+                  hasta las 8 am del día siguiente.
                 </p>
               </div>
             </Blog>

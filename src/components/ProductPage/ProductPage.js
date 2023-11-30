@@ -121,6 +121,15 @@ const ProductPage = ({ productCode }) => {
 
                             <div className={styles.informationContainer}>
                                 <Accordion
+                                  type={'plus'}
+                                  customStyle={styles}
+                                  title={'caracteristicas'}
+                                >
+                                  <p className={styles.information}>
+                                    {sampleProduct.characteristics}
+                                  </p>
+                                </Accordion>
+                                <Accordion
                                     type={'plus'}
                                     customStyle={styles}
                                     title={'Cuidados'}
@@ -129,24 +138,6 @@ const ProductPage = ({ productCode }) => {
                                         {sampleProduct.care}
                                     </p>
                                 </Accordion>
-                                {/*<Accordion*/}
-                                {/*  type={'plus'}*/}
-                                {/*  customStyle={styles}*/}
-                                {/*  title={'delivery & returns'}*/}
-                                {/*>*/}
-                                {/*  <p className={styles.information}>*/}
-                                {/*    {sampleProduct.description}*/}
-                                {/*  </p>*/}
-                                {/*</Accordion>*/}
-                                {/*<Accordion*/}
-                                {/*    type={'plus'}*/}
-                                {/*    customStyle={styles}*/}
-                                {/*    title={'help'}*/}
-                                {/*>*/}
-                                {/*  <p className={styles.information}>*/}
-                                {/*    {sampleProduct.description}*/}
-                                {/*  </p>*/}
-                                {/*</Accordion>*/}
                             </div>
                         </div>
                     </div>

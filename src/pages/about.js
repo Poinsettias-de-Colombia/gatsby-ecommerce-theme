@@ -75,34 +75,19 @@ const AboutPage = (props) => {
                 Desde entonces hemos trabajado por crear una navidad llena de
                 vida y color.
               </p>
-              <br />
               <p>
-                Nuestra elección de la poinsettia y el inicio de nuestras
-                actividades se cristalizó tras una conferencia de nuevos viveristas en
-                Fusagasugá. Inicialmente, cultivamos las plantas en el jardín
-                trasero de nuestra casa en Bogotá, pero pronto mudamos nuestra
-                producción a un pequeño lote heredado, en la region de
-                San Antonio del Tequendama. Finalmente, el incremento de nuestra
-                producción nos forzó a mudarnos a un espacio más grande, una
-                finca en arriendo en el municipio de La Mesa cundinamarca, que
-                finalmente adquirimos unos años después.
+                Iniciamos revendiendo y distribuyendo plantas desde el jardín
+                trasero de nuestra casa en Bogotá, pero pronto iniciamos
+                nuestra propia producción a un pequeño en la region de
+                San Antonio del Tequendama. Con los años, al incrementar
+                nuestra producción, tuvimos que mudarnos a un espacio más grande
+                en el municipio de La Mesa cundinamarca, donde estamos contentos
+                de contribuir al desarrollo de la region.
               </p>
               <img alt={'founder'} src={'/about2.png'}></img>
             </div>
             <h3>Valores</h3>
             <div id={'#values'} ref={valuesRef}>
-              <p>
-                Colombia es un país con una gran vocación agricola, nuestra
-                ubicación en el trópico y nuestras cordilleras nos brindan una
-                grán variedad de climas, perfectos para todo tipo de cultivos.
-              </p>
-              <p>
-                A pesar de estas increíbles condiciones, el campo colombiano
-                permanece en terribles condiciónes de pobreza y subdesarrollo.
-                Los campesinos no encuentran oportunidades productivas dignas
-                y se ven obligados a adoptar cultivos ilícitos, o a emigrar a
-                las ciudades.
-              </p>
               <p>
                 En nuestro cultivo empleamos una docena de campesinos de La Mesa,
                 generando un tejido social que brinde oportunidades de
@@ -113,7 +98,7 @@ const AboutPage = (props) => {
               <ol>
                 <li>Producimos y decoramos con vida</li>
                 <li>Empoderamos al campesinado</li>
-                <li>Con respeto hacia la naturaleza</li>
+                <li>Respetamos la naturaleza</li>
               </ol>
             </div>
           </div>
